@@ -1,0 +1,68 @@
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  width: 100%;
+  height: 175px;
+  background-color: red;
+  position: fixed;
+}
+
+header img{
+  padding: 20px;
+  height: 120px;
+  width: 120px;
+
+}
+
+section {
+  height: 100%;
+}
+
+nav {
+  margin-left: 30%;
+  margin-top: 81px;
+  height: 93px;
+  width: 70%;
+  background-color: blue;
+  position: fixed;
+
+}
+
+.p {
+  height: 100%;
+  width: 25%;
+  background-color: green;
+  float:left;
+}
+
+.d {
+  height: 100%;
+  width: 25%;
+  background-color: yellow;
+  float:right;
+}
+
+.t {
+  height: 100%;
+  width: 25%;
+  background-color: pink;
+  float:right;
+}
+
+.c {
+  height: 100%;
+  width: 25%;
+  background-color: orange;
+  float:right;
+}
+
+@media only screen and (max-width: 500px) {
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
