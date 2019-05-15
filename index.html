@@ -9,9 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Futsalový klub TJ Sokol Jehnice</title>
 </head>
  <body>
+
    <header>
 
     <img src="logo.svg" alt="logo">
@@ -20,7 +23,19 @@
    </header>
 
    <nav>
-
+       <div class="topnav" id="myTopnav">
+          <a href=".html">Titulní stránka</a>
+          <a href=".html">O klubu</a>
+          <a href=".html">Články</a>
+          <a href=".html">Hráči</a>
+          <a href=".html">Nábor mládeže</a>
+          <a href=".html">Fotografie</a>
+          <a href=".html">Diskuze</a>
+          <a href=".html">Kontakt</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+       </div>
    </nav>
 
    <section>
@@ -42,5 +57,18 @@
     </aside>
 
    </section>
+
+   <script>
+   function myFunction() {
+ var x = document.getElementById("myTopnav");
+ if (x.className === "topnav") {
+   x.className += " responsive";
+ } else {
+   x.className = "topnav";
+ }
+ }
+   </script>
+
+
  </body>
 </html>
