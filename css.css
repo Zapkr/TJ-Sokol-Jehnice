@@ -66,28 +66,29 @@ padding-top: 50px;
 
 .p {
   height: 100%;
-  width: 25%;
-  background-color: green;
+  width: 46%;
+  background-color: #E6E6E6;
   float:left;
+
 }
 
 .d {
   height: 100%;
-  width: 25%;
+  width: 18%;
   background-color: yellow;
   float:right;
 }
 
 .t {
   height: 100%;
-  width: 25%;
+  width: 18%;
   background-color: pink;
   float:right;
 }
 
 .c {
   height: 100%;
-  width: 25%;
+  width: 18%;
   background-color: orange;
   float:right;
 }
@@ -114,6 +115,14 @@ padding-top: 50px;
 }
 
 
+@media screen and (max-width: 600px) {
+  section {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  }
+
+
 @media screen and (max-width: 1350px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -134,4 +143,210 @@ padding-top: 50px;
     margin-left: 65%;
 
   }
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #F6D8CE;
+
+}
+
+
+img {
+padding-left: 5%;
+}
+
+.repromeda {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  filter: grayscale(100%);
+  padding-top: 1%;
+}
+
+.ridera {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.justmighty {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.atex {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.ig {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  filter: grayscale(100%);
+
+
+
+}
+
+.fb {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  filter: grayscale(100%);
+  margin-left: 20%;
+
+
+}
+
+.ig:hover {
+  filter: grayscale(0%);
+}
+
+.fb:hover {
+  filter: grayscale(0%);
+}
+
+.repromeda:hover {
+  filter: grayscale(0%);
+}
+
+.ridera:hover {
+  filter: grayscale(0%);
+}
+
+.justmighty:hover {
+  filter: grayscale(0%);
+}
+
+.atex:hover {
+  filter: grayscale(0%);
+}
+
+a {
+text-decoration: none;
+
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-top: 200px;
+  background-color: #FA8258;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 38%;
+  border-radius: 10px;
+
+
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  color:white;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+}
+
+th {
+  border-bottom: 1px solid white;
+}
+
+tr:hover {
+  background-color:#ddd;
+
+
+}
+
+th, td:hover {
+  color:black;
+  font-weight: bold;
+}
+
+
+.a {
+  background-color: #E6E6E6;
+  color: black;
+  border: 2px solid #555555;
+  width: 30%;
+  margin-top: 30%;
+  margin-left: 10%;
+  float:left;
+  font-size: 20px;
+
+}
+
+.b {
+  background-color: #E6E6E6;
+  color: black;
+  border: 2px solid #555555;
+  width: 30%;
+  margin-top: 30%;
+  margin-right: 10%;
+  float: right;
+  font-size: 20px;
+
+
+}
+
+
+.a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.b:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.a:active {
+  background-color: #555555;
+  color: white;
+}
+
+.b:active {
+  background-color: #555555;
+  color: white;
+}
+
+
+.slider {
+  width: 80%;
+  display: flex;
+  overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+   scroll-snap-type: x mandatory;
+}
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+
+.slides > div {
+  scroll-snap-align: start;
+}
+
+.slides {
+  scroll-behavior: smooth;
+}
+
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+.slides > div:target {
+  transform: scale(0.8);
 }
